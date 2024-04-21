@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bla2bqv2m2e1m"]
+
+[sub_resource type="BoxShape3D" id="2"]
+
+[node name="Cube" type="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+sleeping = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("2")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, 0.661953, 0.749545, 0, -0.749545, 0.661953, -0.178272, -0.159091, -0.407201)
